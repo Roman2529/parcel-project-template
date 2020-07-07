@@ -1,0 +1,65 @@
+.advantages .advantages-item-title {
+  color: $title-text-color;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.advantages-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $portfolio-button;
+}
+.advantages-item:nth-child(1)::before {
+  background-image: url(../img/antenna1.svg);
+}
+.advantages-item:nth-child(2)::before {
+  background-image: url(../img/clock1.svg);
+}
+.advantages-item:nth-child(3)::before {
+  background-image: url(../img/diagram1.svg);
+}
+.advantages-item:nth-child(4)::before {
+  background-image: url(../img/astronaut1.svg);
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .advantages .advantages-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .advantages .advantages-item-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages .advantages-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .section.advantages {
+    padding-bottom: 0px;
+  }
+  .advantages-item {
+    width: 270px;
+  }
+}
+
+
+

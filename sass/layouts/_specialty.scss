@@ -1,0 +1,36 @@
+
+.specialty .specialty-item:not(:last-child) {
+  margin-right: 30px;
+}
+.specialty-item {
+  width: 370px;
+  position: relative;
+}
+.specialty-title {
+  color: $white-title-text-color;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8) 80%,
+    rgba(47, 48, 58, 0.8) 80%
+  );
+  position: absolute;
+  bottom: 0px;
+  width: 100% ;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+
+
+@media screen and (max-width: 1199px) {
+  .section.specialty {
+    display: none;
+  }
+}

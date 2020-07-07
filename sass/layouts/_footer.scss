@@ -1,0 +1,136 @@
+.footer-first-block {
+  display: block;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer {
+  background-color: $background-color-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-nav {
+  font-style: normal;
+}
+.icon-list-footer {
+  padding-left: 0px;
+  display: flex;
+  margin-top: 20px;
+}
+.icon-social-link-footer {
+  width: 20px;
+  height: 20px;
+  fill: $white-title-text-color;
+}
+.footer-icon-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.footer-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: $accent-color;
+}
+.footer-adress:hover,
+.footer-adress:focus {
+  color: $accent-color;
+}
+.footer-title {
+  color: $white-title-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-title.uppercase {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.footer-adress {
+  color: $primary-text-color;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 8px;
+}
+.input-footer {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border-radius: 4px;
+  background-color: inherit;
+  border: 1px solid $border-botton-color;
+  color: $footer-text-color;
+}
+.footer-form-position {
+  position: relative;
+}
+.form-footer > .footer-title {
+  display: block;
+  margin-bottom: 20px;
+}
+.icon-telegram {
+  width: 24px;
+  height: 24px ;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .container.footer-blocks {
+    text-align: center;
+  }
+  .icon-list-footer {
+    justify-content: center;
+  }
+  .footer-secondary-block {
+    margin-top: 60px;
+  }
+  .input-footer {
+    margin-bottom: 20px;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  .container.footer-blocks {
+    display: flex;
+  }
+  .footer-blocks > div {
+    width: calc((50% - 45px) / 2);
+    margin-right: 30px;
+  }
+  .footer-blocks > div:last-child {
+    width: calc(50% - 15px);
+    margin-right: 0px;
+  }
+  .footer-secondary-block {
+    padding-top: 12px;
+  }
+  .input-footer {
+    display: block;
+    max-width: 358px;
+    margin-right: 12px;
+  }
+  .footer-form-position {
+    display: flex;
+  }
+  
+}
+
